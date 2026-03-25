@@ -1,4 +1,4 @@
-const ContaBancaria = require('../src/ContaBancaria');
+const ContaBancaria = require('../src/contaBancaria');
 const Banco = require('../src/Banco');
 
 describe('ContaBancaria', () => {
