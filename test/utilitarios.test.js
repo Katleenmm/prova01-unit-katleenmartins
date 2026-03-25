@@ -103,12 +103,17 @@ describe('Testes da classe Utilitarios', () => {
 
     test("ehPalindromo", () => {
         expect(utilitario.ehPalindromo("ovo")).toBe(true);
-        expect(utilitario.ehPalindromo("teste")).toBe(false);
+        expect(
+            utilitario.ehPalindromo("teste")).toBe(false);
     });
 
     test("gerarNumeroAleatorio", () => {
         const numero = utilitario.gerarNumeroAleatorio(100);
         expect(numero).toBeGreaterThanOrEqual(0);
         expect(numero).toBeLessThan(100);
+    });
+
+    test("mesclarObjetos", () => {
+        expect(utilitario.mesclarObjetos({ a: 1 }, { b: 2 })).toEqual({ a: 1, b: 2 });
     });
 });
